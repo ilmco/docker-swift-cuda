@@ -7,6 +7,7 @@ COPY ./files/cudnn.list /etc/apt/sources.list.d/
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt install -yq --no-install-recommends \
       cuda-runtime-9-0 \
+      cuda-misc-headers-9-0 \
       libcudnn7 \
       libcudnn7-dev \
  && rm -rf /var/lib/apt/lists/* \
