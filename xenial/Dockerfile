@@ -15,6 +15,4 @@ RUN apt-get update \
 ADD ./pkgs /tmp/pkgs
 RUN apt-get install -yq --no-install-recommends /tmp/pkgs/*.deb
 
-RUN apt-get install -yq --no-install-recommends https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/libcudnn7-dev_7.1.4.18-1+cuda9.0_amd64.deb
-
 RUN swift --version
