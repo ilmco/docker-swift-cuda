@@ -23,8 +23,4 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /var/cache/apt/archives/*
 
-
-ADD ./pkgs /tmp/pkgs
-RUN apt-get install -yq --no-install-recommends /tmp/pkgs/*.deb
-
 RUN swift --version
